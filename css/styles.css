@@ -20,6 +20,11 @@ html {
     --secont-bg-color: #2F303A;
     --third-text-color: rgba(255,255,255,0.6);
     --description-color: #EEEEEE;
+    --hero-bg-color: rgba(47, 48, 58, 0.4);
+    --feature-icon-color: #F5F4FA;
+    --wabs-iconhover-color: #FFFFFF;
+    --web-icon-color: #AFB1B8;
+
 }
 body {
     color: var(--primary-text-color);
@@ -162,10 +167,21 @@ fill: var(--accent-color)
 
 /* h1 Hero */
 .hero {
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--secont-bg-color);
     text-align: center;
+    background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),    
+    url("../images/heroImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 /* .container .hero-title {
     margin: auto;
@@ -238,6 +254,15 @@ fill: var(--accent-color)
 .feature .item + .item {
     margin-left: 30px;
 }
+.feature .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--feature-icon-color)
+}
 
 .feature .title,
 .team .title {
@@ -297,6 +322,43 @@ fill: var(--accent-color)
 .team .item + .item {
     margin-left: 30px;
 }
+/* Our team contact*/
+.web {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0;
+}
+
+.web-list:not(:last-child) {
+    margin-right: 10px;
+}
+.weblink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    fill: var(--web-icon-color);
+}
+/* .web-list {
+    fill: var(--web-icon-color);
+} */
+/* .icon {
+    background-color: var(--logo-color);
+} */
+/* .webs .icon{
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-bg-color);
+} */
 
 /* footer */
 .footer-logo {
