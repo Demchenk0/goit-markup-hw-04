@@ -54,6 +54,7 @@ ul {
 .header {
     border-bottom: 1px solid;
 }
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -108,14 +109,23 @@ ul {
     text-decoration: none;
 }
  /* Наведения */
- .site-nav .link:hover,
- .site-nav .link:focus,
+ /* .site-nav .link:hover,
+ .site-nav .link:focus, */
+ /* .nav-icon:hover,
+ .nav-icon:focus, */
  .header-contact:hover,
  .header-contact:focus
   {
  color: var(--accent-color);
  }
- 
+
+ .header-contact:hover .nav-smartphone,
+ .header-contact:focus .nav-smartphone,
+ .header-contact:hover .nav-envelope,
+ .header-contact:focus .nav-envelope {
+fill: var(--accent-color)
+ }
+
  .site-nav .link.current {
      color: var(--accent-color);
  } 
@@ -124,8 +134,21 @@ ul {
     display: flex;
     margin-left: auto;
 }
+.nav-smartphone {
+    width: 10px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--primary-text-color)
+}
+
+.nav-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--primary-text-color)
+}
 .auth-nav .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .header-contact  {
