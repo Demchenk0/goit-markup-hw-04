@@ -219,11 +219,12 @@ fill: var(--accent-color)
     color: var(--secont-text-color);
     font-weight: 700;
     font-size: 36px;
+    text-align: center;
     /* background-color: tomato; */
 }
-.section-title.centered {
+/* .section-title.centered {
     text-align: center;
-}
+} */
 
 /* сховати  */
 .visually-hidden {
@@ -344,8 +345,23 @@ fill: var(--accent-color)
     margin-left: auto;
     margin-right: auto;
     
-    fill: var(--web-icon-color);
+    color: var(--web-icon-color);
 }
+
+.icon {
+    fill: currentColor;
+}
+/* .wadlink:hover,
+.wadlink:focus {
+    color: var(--wabs-iconhover-color);
+    background-color: var(--accent-color);
+} */
+.weblink:hover,
+.weblink:focus {
+    color: var(--wabs-iconhover-color);
+    background-color: var(--accent-color);
+}
+
 /* .web-list {
     fill: var(--web-icon-color);
 } */
