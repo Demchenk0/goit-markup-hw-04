@@ -351,30 +351,47 @@ fill: var(--accent-color)
 .icon {
     fill: currentColor;
 }
-/* .wadlink:hover,
-.wadlink:focus {
-    color: var(--wabs-iconhover-color);
-    background-color: var(--accent-color);
-} */
+
 .weblink:hover,
 .weblink:focus {
     color: var(--wabs-iconhover-color);
     background-color: var(--accent-color);
 }
 
-/* .web-list {
-    fill: var(--web-icon-color);
-} */
-/* .icon {
-    background-color: var(--logo-color);
-} */
-/* .webs .icon{
+/* Постояные клиенты */
+.cliends {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
     padding: 0;
-    border: none;
-    width: 44px;
-    height: 44px;
-    background-color: var(--accent-bg-color);
-} */
+    margin: 0;
+}
+.cliends-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    height: 92px;
+    
+    border: 1px solid var(--web-icon-color);
+    border-radius: 4px;
+
+    color: var(--web-icon-color);
+}
+.cliends-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.cliends-list:hover,
+.cliends-list:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+
+}
+
 
 /* footer */
 .footer-logo {
@@ -412,6 +429,67 @@ fill: var(--accent-color)
 .footer-link:focus {
     color: var(--accent-color);
 }
+
+.footer-icon:hover,
+.footer-icon {
+    color: var(--wabs-iconhover-color);
+    background-color: var(--accent-color);
+}
+.footer-join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+    height: 80px;
+}
+.footer-text {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+
+    padding: 0;
+}
+
+.footer-list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footerlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--white-color);
+}
+.footer-icon {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white-color);
+}
+.footer-icon{
+    fill: currentColor;
+}
+
+
 
 /* page 2 */
 /* filters */
