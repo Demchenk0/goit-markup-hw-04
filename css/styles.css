@@ -71,9 +71,16 @@ ul {
     /* background-color: green; */
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
-
+.section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--feature-icon-color);
+}
+.section-cliends {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
 .peculiarities {
     padding-bottom: 0px;
 }
